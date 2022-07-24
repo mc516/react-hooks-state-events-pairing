@@ -1,6 +1,6 @@
 import react, { useState } from "react";
 
-function VoteButtons( {upvote, downvote, toggleComments}) {
+function VoteButtons( {upvote, downvote, toggleComments, showComment}) {
     const [countUpVote, setCountUpVote] = useState(upvote)
     const [countDownVote, setCountDownVote] = useState(downvote)
 
@@ -20,7 +20,7 @@ function VoteButtons( {upvote, downvote, toggleComments}) {
             </div>
             
             <div>
-                <p><button onClick={toggleComments}>Hide Comments</button></p>
+                <p><button onClick={toggleComments}>{ showComment ? "Hide Comments" :  "Show Comments"}</button></p>
             </div>
             
 

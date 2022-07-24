@@ -34,7 +34,7 @@ function Video( {
 
           <div><p>{views} + views | Uplaoded {date}</p></div>
 
-          <VoteButtons upvote={upvotes} downvote={downvotes} toggleComments={handleToggleComments}/>
+          <VoteButtons upvote={upvotes} downvote={downvotes} toggleComments={handleToggleComments} showComment={showComments}/>
 
           <div>
             { showComments ? <CommentList comments={comments}/> : null }
